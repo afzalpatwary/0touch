@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Otouch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header bg-blue py-2 fixed right-0 left-0 top-0 w-100 z-50">
+        <div class="">
+            <div class="container">
+                <div class="xl:flex xl:justify-between items-center py-6 lg:justify-center lg:space-x-0">
+                    <div class="">
+                        <a href="index.html">
+                            <img class="w-auto" src="assets/img/logo.svg" alt="logo" />
+                        </a>
+                    </div>
+                    <div class="-mr-2 -my-2 mt-2 xl:hidden absolute top-4 right-4">
+                        <button type="button" class="navbar-toggler rounded-md p-2 inline-flex items-center justify-center text-gray-400
+                        hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+                            <span class="sr-only">Open menu</span>
+                            <img src="assets/img/mobile-icon.svg" alt="icon" />
+                        </button>
+                    </div>
+                    <nav class="hidden xl:flex justify-center navbar-collapse py-6 xl:py-0">
+                        <a href="index.html" class="block font-medium text-fs-16 text-white transition duration-500 ease-in-out border-b-2 border-opacity-0
+                        hover:text-red border-red hover:border-opacity-100">
+                            Home
+                        </a>
+                        <a href="#" class="block xl:ml-10 font-medium text-fs-16 text-white transition duration-500 ease-in-out
+                        border-b-2 border-opacity-0 hover:text-red border-red hover:border-opacity-100">
+                            About Us
+                        </a>
+                        <a href="leaderboard.html" class="block xl:ml-10 font-medium text-fs-16 text-white transition duration-500 ease-in-out
+                        border-b-2 border-opacity-0 hover:text-red border-red hover:border-opacity-100">
+                            Leaderboard
+                        </a>
+                        <a href="contact.html" class="block xl:ml-10 font-medium text-fs-16 text-white transition duration-500 ease-in-out
+                        border-b-2 border-opacity-0 hover:text-red border-red hover:border-opacity-100">
+                            Contact Us
+                        </a>
+                    </nav>
+                    <div class="hidden navbar-collapse xl:flex items-center justify-end">
+                        <ul class="user-admin flex items-center space-x-5">
+                            <li>
+                                <a href="#">
+                                    <div class="crad-icon relative">
+                                        <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="17.5" cy="17" r="17" fill="#354788" />
+                                            <g clip-path="url(#clip0_2538_2861)">
+                                                <path
+                                                    d="M24.1346 16.4238V24.4261H10.8866V16.4238H9.65234V25.0433C9.65234 25.3841 9.9286 25.6604 10.2695 25.6604H24.7518C25.0927 25.6604 25.3689 25.3841 25.3689 25.0433V16.4238H24.1346Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M25.8829 11.7949H9.11713C8.77626 11.7949 8.5 12.0712 8.5 12.4121V16.4441C8.5 16.7849 8.77626 17.0612 9.11713 17.0612H25.8828C26.2237 17.0612 26.5 16.7851 26.5 16.4441V12.4121C26.5 12.0712 26.2237 11.7949 25.8829 11.7949ZM25.2657 15.8271H9.7343V13.0294H25.2657V15.8271H25.2657Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M18.107 12.2566C18.0651 12.0966 17.047 8.33984 14.0746 8.33984C12.7815 8.33984 11.7295 9.39186 11.7295 10.685C11.7295 11.9781 12.7723 13.0301 14.0541 13.0301H17.5101C17.7012 13.0301 17.8818 12.9414 17.9986 12.79C18.1154 12.6386 18.1554 12.4416 18.107 12.2566ZM14.0541 11.7958C13.4427 11.7958 12.9638 11.3079 12.9638 10.685C12.9638 10.0829 13.4725 9.57411 14.0747 9.57411C15.4289 9.57411 16.2398 10.9082 16.6296 11.7958H14.0541V11.7958Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M20.9462 8.33984C17.9738 8.33984 16.9557 12.0966 16.9137 12.2566C16.8652 12.4416 16.9053 12.6386 17.0222 12.7901C17.139 12.9415 17.3194 13.0301 17.5107 13.0301H20.9667C22.2485 13.0301 23.2913 11.9781 23.2913 10.685C23.2913 9.39186 22.2393 8.33984 20.9462 8.33984ZM20.9668 11.7958H18.3888C18.7757 10.9082 19.5842 9.57414 20.9464 9.57414C21.5485 9.57414 22.0573 10.0829 22.0573 10.685C22.0572 11.3079 21.5783 11.7958 20.9668 11.7958Z"
+                                                    fill="white" />
+                                                <path d="M18.1269 12.4121H16.8926V25.043H18.1269V12.4121Z" fill="white" />
+                                            </g>
+                                        </svg>
+                                        <span class="rounded-full bg-red text-white block text-fs-9 text-center leading-4 absolute top-0 right-0"
+                                            style="width:15px; height:15px;">2</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="relative group">
+                                <a class="flex items-center space-x-5" href="#">
+                                    <span class="text-fs-14 font-medium text-white"> Oleo Bone</span>
+                                    <img class="user-pic" src="assets/img/user-1.png" alt="profile-pic" />
+                                    <img class="arrow" src="assets/img/arrow-down.svg" alt="profile-pic" />
+                                </a>
+
+                                <ul
+                                    class="admin-control bg-white shadow-lg rounded-lg transition duration-500 invisible opacity-0 absolute top-full right-0 w-56 group-hover:block group-hover:opacity-100 group-hover:visible">
+                                    <li class="bg-red flex space-x-4 items-center p-4 rounded-lg">
+                                        <div class="img flex-shrink-0">
+                                            <img class="" src="assets/img/user-1.png" alt="pic" />
+                                        </div>
+                                        <div class="name-n-email text-white">
+                                            <p class="user-name">Oleo Bone</p>
+                                            <p class="user-email text-fs-12">oleoBone@email.com</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <ul class="authInfo-dropdown-menu-list list-unstyled p-4">
+                                            <li>
+                                                <a class="dropdown-item flex items-center py-2 text-fs-12 hover:text-red" href="profile.html">
+                                                    <svg class="mr-3" width="16" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.4115 13.0573C14.0353 12.1591 13.4892 11.3433 12.8038 10.6553C12.1205 9.96524 11.3111 9.41508 10.4202 9.03518C10.4122 9.03116 10.4042 9.02915 10.3963 9.02513C11.6389 8.1206 12.4468 6.64724 12.4468 4.98492C12.4468 2.23116 10.2327 0 7.5 0C4.76731 0 2.55322 2.23116 2.55322 4.98492C2.55322 6.64724 3.36106 8.1206 4.60374 9.02713C4.59576 9.03116 4.58779 9.03316 4.57981 9.03719C3.6862 9.41708 2.88434 9.96181 2.19618 10.6573C1.51143 11.3459 0.965478 12.1615 0.588477 13.0593C0.218111 13.9382 0.0183648 14.8805 4.98787e-05 15.8352C-0.000482508 15.8566 0.00325156 15.878 0.0110322 15.8979C0.0188128 15.9179 0.0304825 15.9361 0.0453536 15.9515C0.0602247 15.9669 0.0779963 15.9791 0.0976214 15.9874C0.117246 15.9957 0.138328 16 0.159623 16H1.35642C1.44419 16 1.514 15.9296 1.516 15.8432C1.55589 14.2915 2.17424 12.8382 3.26732 11.7367C4.39829 10.597 5.90028 9.96985 7.5 9.96985C9.09972 9.96985 10.6017 10.597 11.7327 11.7367C12.8258 12.8382 13.4441 14.2915 13.484 15.8432C13.486 15.9317 13.5558 16 13.6436 16H14.8404C14.8617 16 14.8828 15.9957 14.9024 15.9874C14.922 15.9791 14.9398 15.9669 14.9546 15.9515C14.9695 15.9361 14.9812 15.9179 14.989 15.8979C14.9967 15.878 15.0005 15.8566 15 15.8352C14.98 14.8744 14.7825 13.9397 14.4115 13.0573ZM7.5 8.44221C6.58445 8.44221 5.72275 8.08241 5.07448 7.42915C4.42622 6.77588 4.06917 5.90754 4.06917 4.98492C4.06917 4.06231 4.42622 3.19397 5.07448 2.5407C5.72275 1.88744 6.58445 1.52764 7.5 1.52764C8.41555 1.52764 9.27725 1.88744 9.92552 2.5407C10.5738 3.19397 10.9308 4.06231 10.9308 4.98492C10.9308 5.90754 10.5738 6.77588 9.92552 7.42915C9.27725 8.08241 8.41555 8.44221 7.5 8.44221Z"
+                                                            fill="#56606D"></path>
+                                                    </svg>
+                                                    View Profile
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item flex items-centerpy-2 text-fs-12 hover:text-red" href="activitylog.html">
+                                                    <svg class="mr-3" width="16" height="16" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M15.8333 12.5682H1.5V0.159091C1.5 0.0715909 1.425 0 1.33333 0H0.166667C0.075 0 0 0.0715909 0 0.159091V13.8409C0 13.9284 0.075 14 0.166667 14H15.8333C15.925 14 16 13.9284 16 13.8409V12.7273C16 12.6398 15.925 12.5682 15.8333 12.5682ZM3.70417 9.49972C3.76875 9.56136 3.87292 9.56136 3.93958 9.49972L6.82083 6.76335L9.47917 9.31676C9.54375 9.37841 9.65 9.37841 9.71458 9.31676L15.4521 3.84205C15.5167 3.7804 15.5167 3.67898 15.4521 3.61733L14.6271 2.82983C14.5958 2.80022 14.5535 2.78361 14.5094 2.78361C14.4653 2.78361 14.423 2.80022 14.3917 2.82983L9.6 7.4017L6.94583 4.85227C6.91451 4.82267 6.87221 4.80606 6.82812 4.80606C6.78404 4.80606 6.74174 4.82267 6.71042 4.85227L2.88125 8.48551C2.85023 8.51541 2.83283 8.55579 2.83283 8.59787C2.83283 8.63995 2.85023 8.68033 2.88125 8.71023L3.70417 9.49972Z"
+                                                            fill="#56606D"></path>
+                                                    </svg>
+                                                    Activity Log
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item flex items-center py-2 text-fs-12 hover:text-red" href="settings.html">
+                                                    <svg class="mr-3" width="16" height="16" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M20.2025 11.7259C20.023 11.5252 19.924 11.2672 19.924 11C19.924 10.7328 20.023 10.4748 20.2025 10.2741L21.6357 8.69031C21.7936 8.51727 21.8916 8.29954 21.9158 8.06836C21.9399 7.83717 21.8889 7.60442 21.77 7.40349L19.5307 3.59801C19.413 3.39731 19.2339 3.23822 19.0187 3.14342C18.8036 3.04863 18.5635 3.02296 18.3327 3.07008L16.2277 3.48802C15.9599 3.54239 15.681 3.49857 15.4438 3.36484C15.2066 3.23111 15.0274 3.01672 14.9401 2.76212L14.2571 0.749394C14.182 0.530941 14.0389 0.341201 13.848 0.206994C13.6571 0.0727869 13.4282 0.000900553 13.1934 0.00149575H8.7148C8.47064 -0.0110228 8.22902 0.0553074 8.02684 0.190356C7.82467 0.325404 7.67305 0.521746 7.59514 0.749394L6.96813 2.76212C6.8808 3.01672 6.70163 3.23111 6.46442 3.36484C6.22721 3.49857 5.94837 3.54239 5.68053 3.48802L3.51959 3.07008C3.30075 3.0397 3.07766 3.07362 2.87841 3.16757C2.67917 3.26151 2.51268 3.41128 2.39993 3.59801L0.160616 7.40349C0.0387525 7.60218 -0.0160413 7.83362 0.00406833 8.06474C0.0241779 8.29587 0.118161 8.51482 0.272582 8.69031L1.69455 10.2741C1.87405 10.4748 1.97304 10.7328 1.97304 11C1.97304 11.2672 1.87405 11.5252 1.69455 11.7259L0.272582 13.3097C0.118161 13.4852 0.0241779 13.7041 0.00406833 13.9353C-0.0160413 14.1664 0.0387525 14.3978 0.160616 14.5965L2.39993 18.402C2.5176 18.6027 2.69677 18.7618 2.9119 18.8566C3.12702 18.9514 3.36712 18.977 3.59797 18.9299L5.70292 18.512C5.97076 18.4576 6.2496 18.5014 6.48681 18.6352C6.72402 18.7689 6.9032 18.9833 6.99053 19.2379L7.67352 21.2506C7.75142 21.4783 7.90304 21.6746 8.10522 21.8096C8.3074 21.9447 8.54902 22.011 8.79318 21.9985H13.2718C13.5065 21.9991 13.7355 21.9272 13.9264 21.793C14.1173 21.6588 14.2604 21.4691 14.3355 21.2506L15.0185 19.2379C15.1058 18.9833 15.285 18.7689 15.5222 18.6352C15.7594 18.5014 16.0382 18.4576 16.3061 18.512L18.411 18.9299C18.6419 18.977 18.882 18.9514 19.0971 18.8566C19.3122 18.7618 19.4914 18.6027 19.6091 18.402L21.8484 14.5965C21.9673 14.3956 22.0183 14.1628 21.9942 13.9316C21.97 13.7005 21.872 13.4827 21.714 13.3097L20.2025 11.7259ZM18.5342 13.1997L19.4299 14.1896L17.9968 16.6312L16.6756 16.3673C15.8692 16.2053 15.0303 16.3399 14.3182 16.7454C13.6062 17.1509 13.0704 17.7991 12.8127 18.567L12.3873 19.7988H9.52095L9.11788 18.545C8.86019 17.7771 8.32447 17.1289 7.61239 16.7234C6.90032 16.3179 6.06146 16.1834 5.25506 16.3453L3.93386 16.6092L2.47831 14.1786L3.37403 13.1887C3.92485 12.5838 4.22938 11.8006 4.22938 10.989C4.22938 10.1774 3.92485 9.39424 3.37403 8.7893L2.47831 7.79944L3.91147 5.37976L5.23267 5.64373C6.03907 5.80565 6.87792 5.67109 7.59 5.2656C8.30207 4.8601 8.8378 4.2119 9.09548 3.44403L9.52095 2.2012H12.3873L12.8127 3.45503C13.0704 4.2229 13.6062 4.8711 14.3182 5.2766C15.0303 5.68209 15.8692 5.81665 16.6756 5.65473L17.9968 5.39076L19.4299 7.83243L18.5342 8.8223C17.9896 9.42585 17.6888 10.2045 17.6888 11.011C17.6888 11.8175 17.9896 12.5961 18.5342 13.1997ZM10.9541 6.6006C10.0683 6.6006 9.20243 6.85862 8.46592 7.34203C7.72941 7.82544 7.15538 8.51254 6.8164 9.31642C6.47742 10.1203 6.38873 11.0049 6.56154 11.8583C6.73435 12.7117 7.1609 13.4956 7.78725 14.1108C8.41359 14.7261 9.21161 15.1451 10.0804 15.3149C10.9491 15.4846 11.8497 15.3975 12.668 15.0645C13.4864 14.7315 14.1858 14.1677 14.678 13.4442C15.1701 12.7207 15.4327 11.8701 15.4327 11C15.4327 9.83321 14.9609 8.7142 14.121 7.88915C13.2811 7.06411 12.1419 6.6006 10.9541 6.6006ZM10.9541 13.1997C10.5112 13.1997 10.0783 13.0707 9.71002 12.829C9.34177 12.5873 9.05475 12.2437 8.88526 11.8418C8.71577 11.4398 8.67142 10.9976 8.75783 10.5709C8.84423 10.1442 9.05751 9.75221 9.37068 9.44458C9.68386 9.13694 10.0829 8.92744 10.5172 8.84257C10.9516 8.75769 11.4019 8.80125 11.8111 8.96774C12.2202 9.13423 12.57 9.41617 12.816 9.77791C13.0621 10.1397 13.1934 10.5649 13.1934 11C13.1934 11.5834 12.9575 12.1429 12.5376 12.5554C12.1176 12.9679 11.548 13.1997 10.9541 13.1997Z"
+                                                            fill="#56606D"></path>
+                                                    </svg>
+                                                    Settings
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item flex items-center pt-0 pb-2 text-fs-12 hover:text-red" href="logout.html">
+                                                    <svg class="mr-3" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12.1406 1.44688C14.3094 2.82188 15.75 5.24375 15.75 8C15.75 12.275 12.2875 15.7406 8.01563 15.75C3.75001 15.7594 0.256255 12.2813 0.250005 8.0125C0.24688 5.25 1.6875 2.82188 3.85938 1.44688C4.04063 1.33125 4.28125 1.39063 4.3875 1.57813L4.75625 2.23125C4.85313 2.40313 4.8 2.62188 4.63438 2.72813C2.90001 3.84063 1.75001 5.78438 1.75001 8C1.75001 11.4531 4.54688 14.25 8 14.25C11.4531 14.25 14.25 11.4531 14.25 8C14.25 5.78438 13.1 3.84063 11.3656 2.73125C11.2 2.625 11.1469 2.40625 11.2438 2.23438L11.6125 1.58125C11.7156 1.39063 11.9594 1.33438 12.1406 1.44688ZM8.75 8.625V0.375C8.75 0.16875 8.58125 0 8.375 0H7.625C7.41876 0 7.25 0.16875 7.25 0.375V8.625C7.25 8.83125 7.41876 9 7.625 9H8.375C8.58125 9 8.75 8.83125 8.75 8.625Z"
+                                                            fill="#56606D"></path>
+                                                    </svg>
+                                                    Log Out
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ header -->
+
+
+
+
+    <!-- leader-board -->
+    <section class="leader-board">
+        <div class="container">
+            <div class="page-header pt-40 md:flex justify-between items-center">
+                <div class="content">
+                    <h4 class="text-fs-30 text-dark font-semibold mb-2">
+                        Leaderboard
+                    </h4>
+                    <p class="text-lightblue pb-8 text-fs-18 font-normal">
+                        Top Donators in our community
+                    </p>
+                </div>
+                <div class="select-year bg-white rounded-lg py-2 px-4 mb-5">
+                    <select class="select-2-init text-logan font-semibold text-fs-13 focus:outline-none">
+                        <option selected>Last Year</option>
+                        <option value="1">Last 7 Days</option>
+                        <option value="2">Last Month</option>
+                        <option value="3">Last 1 Days</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter-data-table bg-white px-10 pt-5 pb-4 rounded-lg mt-2 w-full overflow-x-auto">
+                <table class="table w-full align-middle">
+                    <thead>
+                        <tr>
+                            <th class="truncate text-lightblue text-fs-14 font-medium align-middle text-left py-3 pl-3">Ranking</th>
+                            <th class="truncate text-lightblue text-fs-14 font-medium align-middle text-left py-3">Name</th>
+                            <th class="truncate text-lightblue text-fs-14 font-medium align-middle text-left py-3">Donated</th>
+                            <th class="truncate text-lightblue text-fs-14 font-medium align-middle text-center py-3 pr-3">Badges</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3 pl-3">01</td>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3">
+                                <a class="truncate text-lightblue text-fs-14 align-middle flex items-center space-x-4" href="#">
+                                    <img src="assets/img/parson-1.png" alt="parson" class="img-fluid" />
+                                    <span class="name">
+                                        Esther Howard
+                                    </span>
+                                </a>
+                            </td>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3">
+                                $475.22
+                            </td>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3 pr-3">
+                                <div class="icon text-center flex justify-center group cursor-pointer relative">
+                                    <img src="assets/img/crown.svg" alt="icon" class="icon" />
+                                    <div
+                                        class="after-hover-content opacity-0 invisible transition duration-500 absolute group-hover:visible group-hover:opacity-100">
+                                        <p class="content text-fs-12 text-gray p-4 bg-white rounded-lg text-left is-shadow">
+                                            Commodo, convallis ante tempus <br> pretium, habitant. Ultrices blandit at <br>massa augue vitae euismod. Diam
+                                            <br> erat in lectus
+                                            mollis amet lacus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3 pl-3">02</td>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3">
+                                <a class="truncate text-lightblue text-fs-14 align-middle flex items-center space-x-4" href="#">
+                                    <img src="assets/img/parson-2.png" alt="parson" class="img-fluid" />
+                                    <span class="name">
+                                        Albert Flores
+                                    </span>
+                                </a>
+                            </td>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3">
+                                $475.22
+                            </td>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3 pr-3">
+                                <div class="icon text-center flex justify-center group cursor-pointer relative">
+                                    <img src="assets/img/medal.svg" alt="icon" class="icon" />
+                                    <div
+                                        class="after-hover-content opacity-0 invisible transition duration-500 absolute group-hover:visible group-hover:opacity-100">
+                                        <p class="content text-fs-12 text-gray p-4 bg-white rounded-lg text-left is-shadow">
+                                            Commodo, convallis ante tempus <br> pretium, habitant. Ultrices blandit at <br>massa augue vitae euismod. Diam
+                                            <br> erat in lectus
+                                            mollis amet lacus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3 pl-3">03</td>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3">
+                                <a class="truncate text-lightblue text-fs-14 align-middle flex items-center space-x-4" href="#">
+                                    <img src="assets/img/parson-3.png" alt="parson" class="img-fluid" />
+                                    <span class="name">
+                                        Albert Flores
+                                    </span>
+                                </a>
+                            </td>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3">
+                                $475.22
+                            </td>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3 pr-3">
+                                <div class="icon text-center flex justify-center group cursor-pointer relative">
+                                    <img src="assets/img/crown2.svg" alt="icon" class="icon" />
+                                    <div
+                                        class="after-hover-content opacity-0 invisible transition duration-500 absolute group-hover:visible group-hover:opacity-100">
+                                        <p class="content text-fs-12 text-gray p-4 bg-white rounded-lg text-left is-shadow">
+                                            Commodo, convallis ante tempus <br> pretium, habitant. Ultrices blandit at <br>massa augue vitae euismod. Diam
+                                            <br> erat in lectus
+                                            mollis amet lacus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3 pl-3">04</td>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3">
+                                <a class="truncate text-lightblue text-fs-14 align-middle flex items-center space-x-4" href="#">
+                                    <img src="assets/img/parson-4.png" alt="parson" class="img-fluid" />
+                                    <span class="name">
+                                        Albert Flores
+                                    </span>
+                                </a>
+                            </td>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3">
+                                $475.22
+                            </td>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3 pr-3">
+                                <div class="icon text-center flex justify-center group cursor-pointer relative">
+                                    <img src="assets/img/clock.svg" alt="icon" class="icon" />
+                                    <div
+                                        class="after-hover-content opacity-0 invisible transition duration-500 absolute group-hover:visible group-hover:opacity-100">
+                                        <p class="content text-fs-12 text-gray p-4 bg-white rounded-lg text-left is-shadow">
+                                            Commodo, convallis ante tempus <br> pretium, habitant. Ultrices blandit at <br>massa augue vitae euismod. Diam
+                                            <br> erat in lectus
+                                            mollis amet lacus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3 pl-3">05</td>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3">
+                                <a class="truncate text-lightblue text-fs-14 align-middle flex items-center space-x-4" href="#">
+                                    <img src="assets/img/parson-5.png" alt="parson" class="img-fluid" />
+                                    <span class="name">
+                                        Albert Flores
+                                    </span>
+                                </a>
+                            </td>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3">
+                                $475.22
+                            </td>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3 pr-3">
+                                <div class="icon text-center flex justify-center group cursor-pointer relative">
+                                    <img src="assets/img/medal2.svg" alt="icon" class="icon" />
+                                    <div
+                                        class="after-hover-content opacity-0 invisible transition duration-500 absolute group-hover:visible group-hover:opacity-100">
+                                        <p class="content text-fs-12 text-gray p-4 bg-white rounded-lg text-left is-shadow">
+                                            Commodo, convallis ante tempus <br> pretium, habitant. Ultrices blandit at <br>massa augue vitae euismod. Diam
+                                            <br> erat in lectus
+                                            mollis amet lacus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3 pl-3">06</td>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3">
+                                <a class="truncate text-lightblue text-fs-14 align-middle flex items-center space-x-4" href="#">
+                                    <img src="assets/img/parson-1.png" alt="parson" class="img-fluid" />
+                                    <span class="name">
+                                        Albert Flores
+                                    </span>
+                                </a>
+                            </td>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3">
+                                $475.22
+                            </td>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3 pr-3">
+                                <div class="icon text-center flex justify-center group cursor-pointer relative">
+                                    <img src="assets/img/crown2.svg" alt="icon" class="icon" />
+                                    <div
+                                        class="after-hover-content opacity-0 invisible transition duration-500 absolute group-hover:visible group-hover:opacity-100">
+                                        <p class="content text-fs-12 text-gray p-4 bg-white rounded-lg text-left is-shadow">
+                                            Commodo, convallis ante tempus <br> pretium, habitant. Ultrices blandit at <br>massa augue vitae euismod. Diam
+                                            <br> erat in lectus
+                                            mollis amet lacus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3 pl-3">07</td>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3">
+                                <a class="truncate text-lightblue text-fs-14 align-middle flex items-center space-x-4" href="#">
+                                    <img src="assets/img/parson-2.png" alt="parson" class="img-fluid" />
+                                    <span class="name">
+                                        Albert Flores
+                                    </span>
+                                </a>
+                            </td>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3">
+                                $475.22
+                            </td>
+                            <td class="truncate text-lightblue text-fs-14 align-middle py-3 pr-3">
+                                <div class="icon text-center flex justify-center group cursor-pointer">
+                                    <img src="assets/img/medal2.svg" alt="icon" class="icon" />
+                                    <div
+                                        class="after-hover-content opacity-0 invisible transition duration-500 absolute group-hover:visible group-hover:opacity-100">
+                                        <p class="content text-fs-12 text-gray p-4 bg-white rounded-lg text-left is-shadow">
+                                            Commodo, convallis ante tempus <br> pretium, habitant. Ultrices blandit at <br>massa augue vitae euismod. Diam
+                                            <br> erat in lectus
+                                            mollis amet lacus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="pagination py-5 flex justify-end">
+                    <ul class="flex pl-0 list-none rounded my-2">
+                        <li
+                            class="px-4 py-3 text-graylight text-fs-14 hover:bg-red hover:text-white leading-5 border border-whitelight border-r-0 ml-0 rounded-l">
+                            <a class="page-link" href="#">
+                                <img class="flex-inline h-5" src="assets/img/arrow-left.svg" alt="icon" />
+                            </a>
+                        </li>
+                        <li class="px-4 py-3 text-graylight text-fs-14 hover:bg-red hover:text-white leading-4 border border-whitelight border-r-0"><a
+                                class="page-link" href="#">1</a></li>
+                        <li class="px-4 py-3 text-graylight text-fs-14 hover:bg-red hover:text-white leading-4 border border-whitelight border-r-0"><a
+                                class="page-link" href="#">2</a></li>
+                        <li class="px-4 py-3 text-graylight text-fs-14 hover:bg-red hover:text-white leading-4 border border-whitelight border-r-0"><a
+                                class="page-link" href="#">3</a></li>
+                        <li class="px-4 py-3 text-graylight text-fs-14 hover:bg-red hover:text-white leading-5 border border-whitelight rounded-r"><a
+                                class="page-link" href="#">
+                                <img src="assets/img/arrow-right.svg" alt="icon" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ leader-board -->
+
+
+
+
+
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
